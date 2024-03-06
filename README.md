@@ -1,6 +1,6 @@
 # RockPaperScissor
 
-**TODO: Add description**
+Simple Rock Paper Scissor game written in elixir
 
 ## Installation
 
