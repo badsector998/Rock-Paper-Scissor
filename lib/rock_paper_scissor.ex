@@ -10,7 +10,9 @@ defmodule RockPaperScissor do
   def main() do
     rps = [:Rock, :Paper, :Scissor]
     computer = Enum.random(rps)
-    player = IO.gets("Bet on!\n") |> String.trim() |> String.to_existing_atom()
+    player = IO.gets("Bet on!\n")
+      |> String.trim()
+      |> String.to_existing_atom()
     check(computer, player)
   end
 
@@ -31,7 +33,8 @@ defmodule RockPaperScissor do
         IO.puts("You won!")
     end
 
-    again = IO.gets("Wanna Play Again?\n") |> String.trim()
+    again = IO.gets("Wanna Play Again?\n")
+      |> String.trim()
     if again === "y" do
       main()
     else
